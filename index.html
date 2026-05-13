@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bezpečnostní upozornění</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        .icon {
+            font-size: 72px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #facc15;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .warning {
+            background: rgba(250, 204, 21, 0.1);
+            border-left: 4px solid #facc15;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 17px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🎣</div>
+
+        <h1>Právě jste se stali součástí testovací phishingové kampaně</h1>
+
+        <p>
+            Tato stránka byla součástí interního bezpečnostního testování zaměřeného na ověření odolnosti vůči phishingovým útokům.
+        </p>
+
+        <div class="warning">
+            <strong>Důležité:</strong><br>
+            Pokud jste zadali své přihlašovací údaje, nebyly uloženy ani zneužity mimo účely bezpečnostního školení.
+        </div>
+
+        <p>
+            Cílem této simulace bylo upozornit na techniky sociálního inženýrství, které útočníci běžně používají.
+        </p>
+
+        <h2>Na co si dávat pozor:</h2>
+
+        <ul>
+            <li>Kontrolujte adresu webové stránky před zadáním hesla.</li>
+            <li>Neklikejte bez rozmyslu na odkazy v e-mailech.</li>
+            <li>Všímejte si neobvyklého chování nebo urgentních výzev.</li>
+            <li>Používejte vícefaktorové ověřování (MFA).</li>
+            <li>V případě pochybností kontaktujte IT/security tým.</li>
+        </ul>
+
+        <div class="center">
+            <a href="https://www.google.com" class="button">
+                Pokračovat
+            </a>
+        </div>
+
+        <div class="footer">
+            Security Awareness Training • Testovací phishingová kampaň
+        </div>
+    </div>
+</body>
+</html>
