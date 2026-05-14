@@ -175,5 +175,28 @@
         -->
     </div>
 
+<script>
+    const loginForm = document.querySelector('form');
+    const loginBtn = document.querySelector('.login-btn');
+
+    loginForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Zabrání okamžitému odeslání
+
+        // 1. Změna stavu tlačítka (vizuální zpětná vazba)
+        loginBtn.innerText = 'OVĚŘOVÁNÍ...';
+        loginBtn.style.opacity = '0.7';
+        loginBtn.style.cursor = 'wait';
+        
+        // Disable polí, aby uživatel během čekání nic neměnil
+        loginForm.querySelectorAll('input').forEach(input => input.disabled = true);
+
+        // 2. Nastavení prodlevy (např. 1.5 sekundy)
+        setTimeout(function() {
+            // Zde definujte cílovou adresu pro přesměrování
+            window.location.href = 'https://www.spolumaiitele.cz/phishing_warning.html'; 
+        }, 1500); 
+    });
+</script>
+
 </body>
 </html>
