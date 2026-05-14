@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlášení | spolumajitelé</title>
+    <style>
+        /* Definice barev podle brandu */
+        :root {
+            --dark-green: #2d413b; /* Tmavé pozadí z webu */
+            --gold: #c5a059;       /* Zlatá barva loga a textů */
+            --white: #ffffff;
+            --text-gray: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-green);
+            background-image: linear-gradient(rgba(45, 65, 59, 0.8), rgba(45, 65, 59, 0.8)), 
+                              url('SCR-20260514-ivqa.jpg'); /* Jemný podhled na pozadí */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255, 0.05); /* Skleněný efekt */
+            backdrop-filter: blur(10px);
+            padding: 50px 40px;
+            border-radius: 4px; /* Ostřejší hrany podle screenshotu */
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 180px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--white);
+            font-size: 22px;
+            margin-bottom: 30px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--gold);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            background: transparent;
+            border: 1px solid rgba(197, 160, 89, 0.5);
+            border-radius: 0; /* Design bez zaoblení ladí s logem */
+            color: var(--white);
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: var(--gold);
+        }
+
+        .form-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 13px;
+            color: var(--text-gray);
+        }
+
+        .form-footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--gold);
+            border: none;
+            color: var(--dark-green);
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .login-btn:hover {
+            opacity: 0.9;
+        }
+
+        .signup-text {
+            margin-top: 25px;
+            font-size: 13px;
+            color: var(--text-gray);
+        }
+
+        .signup-text a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <!-- Použití loga ze zadání -->
+        <img src="https://spolumajitele.cz/assets/images/logo.svg?v=1757697292" alt="spolumajitelé" class="logo">
+
+        <h1>Záznam o školení</h1>
+        <div class="signup-text">
+            <p>Prosíme o přihlášení pomocí vašeho firemního Microsoft účtu níže, abychom mohli vést záznamy o provedených školeních kybernetické bezpečnosti. </p>
+            </br>
+            </br>
+
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Heslo</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!--
+            <div class="form-footer">
+                <label style="cursor:pointer">
+                    <input type="checkbox" name="remember"> Zapamatovat
+                </label>
+                <a href="#">Zapomenuté heslo?</a>
+            </div>
+            -->
+
+            <button type="submit" class="login-btn">Registrovat se na školení</button>
+        </form>
+        
+        <!--
+        <div class="signup-text">
+            Neznáte své údaje? <a href="#">Kontaktujte nás</a>
+        </div>
+        -->
+    </div>
+
+</body>
+</html>
