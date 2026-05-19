@@ -15,8 +15,9 @@
     body {
       background: #000;
       color: #00ff66;
-      overflow: hidden;
-      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-height: 100vh;
     }
 
     .matrix {
@@ -56,8 +57,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      padding: 20px;
+      min-height: 100vh;
+      padding: 40px 20px;
       text-align: center;
     }
 
@@ -221,7 +222,7 @@
 
       <div class="final-message" id="finalMessage">
         <div class="emoji">🔐</div>
-        <h2>Tohle byl pouze test</h2>
+        <h2>Tohle byl pouze security awareness test</h2>
         <p>
           Stačilo naskenovat neznámý QR kód a otevřít odkaz.
           Ve skutečném útoku by mohlo dojít ke krádeži hesel,
